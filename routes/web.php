@@ -6,3 +6,7 @@ use Livewire\Volt\Volt;
 
 
 require __DIR__.'/auth.php';
+
+Route::get('/', function () {
+    return view('Project');
+});
