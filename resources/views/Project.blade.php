@@ -56,72 +56,70 @@
                 <div class="absolute inset-0 bg-black/10"></div>
 
                 <div
-                    class="absolute w-fit bottom-[8rem] left-[6rem] lg:left-[10rem] flex flex-col lg:w-3/5 gap-10 z-10">
-                    <h1 class="relative text-7xl font-extrabold text-white">
+                    class="absolute w-fit bottom-[8rem] left-[3rem] sm:bottom-[8rem] sm:left-[6rem] lg:left-[10rem] flex flex-col lg:w-3/5 gap-10 z-10">
+                    <h1 class="relative text-4xl md:text-7xl font-extrabold text-white">
                         <span class="gradient-border">Dự án</span>
                     </h1>
-                    <p class="text-[#F2F0EE] text-2xl w-5/6 text-justify lg:w-3/5">
+                    <p class="text-[#F2F0EE] text-lg md:text-2xl w-5/6 text-justify lg:w-3/5">
                         Với hành trình không ngừng học hỏi của Skyline Digital, đội ngũ đã
                         có những dự án nổi bật trong quá trình trau dồi và phát triển.
                     </p>
                 </div>
 
                 <div
-                    class="absolute bottom-[8rem] hidden lg:block right-[10rem] w-[450px] h-[350px] rounded-3xl overflow-hidden">
+                    class="absolute bottom-[8rem] hidden xl:block right-[10rem] w-[450px] h-[350px] rounded-3xl overflow-hidden">
                     <img src="{{ asset('assets/images/tn.JPG') }}" alt="overlay image"
                         class="w-full h-full object-cover">
                 </div>
             </div>
         </section>
 
-        <main class="px-15 m-auto">
+        <main class="px-2 md:px-15 m-auto">
             <section id="project" class="mt-8">
                 <div class="">
-                    <h1 class="relative text-4xl font-semibold text-center mb-8">
+                    <h1 class="relative text-2xl sm:text-4xl font-semibold text-center mb-8">
                         <span class="underline-animate">Dự án Website</span>
                     </h1>
 
                     <div class="flex flex-col lg:flex-row items-center justify-center gap-15">
                         <div class="flex flex-col items-center gap-3">
-  <div class="relative group overflow-hidden rounded-xl">
-    <img src="{{ asset('/assets/images/suwafumo.png') }}" alt="suwafumo"
-      class="w-[610px] h-[415px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
+                            <div class="relative group overflow-hidden rounded-xl">
+                                <img src="{{ asset('/assets/images/suwafumo.png') }}" alt="suwafumo"
+                                    class="w-full h-[315px] sm:w-[610px] sm:h-[415px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
 
-    <div class="absolute inset-0 rounded-xl 
+                                <div class="absolute inset-0 rounded-xl 
         bg-black/50 opacity-100 
         lg:opacity-0 lg:group-hover:opacity-100
         transition-opacity duration-300 flex items-center justify-center">
-      <a href="" 
-         class="border border-white rounded-3xl px-4 py-2 
+                                    <a href="" class="border border-white rounded-3xl px-4 py-2 
                 text-white text-lg font-bold 
                 transition-all duration-300 
                 hover:bg-white hover:text-[#161616]">
-        Đang cập nhật..
-      </a>
-    </div>
-  </div>
-</div>
+                                        Đang cập nhật..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
 
-<div class="flex flex-col items-center gap-3">
-  <div class="relative group overflow-hidden rounded-xl">
-    <img src="{{ asset('/assets/images/beebook.png') }}" alt="beebook"
-      class="w-[610px] h-[415px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
+                        <div class="flex flex-col items-center gap-3">
+                            <div class="relative group overflow-hidden rounded-xl">
+                                <img src="{{ asset('/assets/images/beebook.png') }}" alt="beebook"
+                                    class="w-full h-[315px] sm:w-[610px] sm:h-[415px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
 
-    <div class="absolute inset-0 rounded-xl 
+                                <div class="absolute inset-0 rounded-xl 
         bg-black/50 opacity-100 
         lg:opacity-0 lg:group-hover:opacity-100
         transition-opacity duration-300 flex items-center justify-center">
-      <a href="https://www.beebook.shop/" target="_blank" 
-         class="border border-white rounded-3xl px-4 py-2 
+                                    <a href="https://www.beebook.shop/" target="_blank" class="border border-white rounded-3xl px-4 py-2 
                 text-white text-lg font-bold 
                 transition-all duration-300 
                 hover:bg-white hover:text-[#161616]">
-        Xem thêm
-      </a>
-    </div>
-  </div>
-</div>
+                                        Xem thêm
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -130,7 +128,7 @@
             </section>
             <section id="ecommerce" class="mt-8">
                 <h1 class="text-4xl font-semibold ">Thương mại điện tử</h1>
-                <div class="px-10 lg:px-0 gap-6 mt-6 py-10 flex flex-col items-center lg:items-start lg:flex-row rounded-3xl justify-around"
+                <div class="px-5 py-5 sm:px-10 lg:px-0 gap-6 mt-6 sm:py-10 flex flex-col items-center lg:items-start lg:flex-row rounded-3xl justify-around"
                     style="background: linear-gradient(180deg, #437FED, #030D42)">
                     <div class="  lg:w-1/3 flex flex-col gap-4 font-semibold text-justify">
                         <p class="text-[#F2F0EE]">
@@ -158,7 +156,7 @@
                     </div>
                     <div class="">
                         <img src="{{asset('/assets/images/beebook2.png')}}"
-                            class="w-[600px] h-[430px] rounded-3xl object-cover" alt="">
+                            class="w-full h-[265px]  sm:w-[600px] sm:h-[430px] rounded-3xl  object-cover" alt="">
                     </div>
                 </div>
             </section>
