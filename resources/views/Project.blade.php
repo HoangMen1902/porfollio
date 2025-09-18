@@ -55,17 +55,19 @@
 
                 <div class="absolute inset-0 bg-black/10"></div>
 
-                <div class="absolute bottom-[8rem] left-[10rem] flex flex-col w-3/5 gap-10 z-10">
+                <div
+                    class="absolute w-fit bottom-[8rem] left-[6rem] lg:left-[10rem] flex flex-col lg:w-3/5 gap-10 z-10">
                     <h1 class="relative text-7xl font-extrabold text-white">
                         <span class="gradient-border">Dự án</span>
                     </h1>
-                    <p class="text-[#F2F0EE] text-2xl w-3/5">
+                    <p class="text-[#F2F0EE] text-2xl w-5/6 text-justify lg:w-3/5">
                         Với hành trình không ngừng học hỏi của Skyline Digital, đội ngũ đã
                         có những dự án nổi bật trong quá trình trau dồi và phát triển.
                     </p>
                 </div>
 
-                <div class="absolute bottom-[8rem] right-[10rem] w-[450px] h-[350px] rounded-3xl overflow-hidden">
+                <div
+                    class="absolute bottom-[8rem] hidden lg:block right-[10rem] w-[450px] h-[350px] rounded-3xl overflow-hidden">
                     <img src="{{ asset('assets/images/tn.JPG') }}" alt="overlay image"
                         class="w-full h-full object-cover">
                 </div>
@@ -79,42 +81,48 @@
                         <span class="underline-animate">Dự án Website</span>
                     </h1>
 
-                    <div class="flex items-center justify-center gap-15">
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-15">
                         <div class="flex flex-col items-center gap-3">
-                            <div class="relative group overflow-hidden rounded-xl">
-                                <img src="{{ asset('/assets/images/suwafumo.png') }}" alt="suwafumo"
-                                    class="w-[610px] h-[415px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
+  <div class="relative group overflow-hidden rounded-xl">
+    <img src="{{ asset('/assets/images/suwafumo.png') }}" alt="suwafumo"
+      class="w-[610px] h-[415px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
 
-                                <div class="absolute inset-0 rounded-xl 
-          bg-black/50 opacity-0 group-hover:opacity-100 
-          transition-opacity duration-300 flex items-center justify-center">
-                                    <a href="" class="border border-white rounded-3xl px-4 py-2 
-          text-white text-lg font-bold 
-          transition-all duration-300 
-          hover:bg-white hover:text-[#161616]">
-                                        Đang cập nhật..
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+    <div class="absolute inset-0 rounded-xl 
+        bg-black/50 opacity-100 
+        lg:opacity-0 lg:group-hover:opacity-100
+        transition-opacity duration-300 flex items-center justify-center">
+      <a href="" 
+         class="border border-white rounded-3xl px-4 py-2 
+                text-white text-lg font-bold 
+                transition-all duration-300 
+                hover:bg-white hover:text-[#161616]">
+        Đang cập nhật..
+      </a>
+    </div>
+  </div>
+</div>
 
-                        <div class="flex flex-col items-center gap-3">
-                            <div class="relative group overflow-hidden rounded-xl">
-                                <img src="{{ asset('/assets/images/beebook.png') }}" alt="beebook"
-                                    class="w-[610px] h-[415px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
 
-                                <div class="absolute inset-0 rounded-xl 
-          bg-black/50 opacity-0 group-hover:opacity-100 
-          transition-opacity duration-300 flex items-center justify-center">
-                                    <a href="https://www.beebook.shop/" target="_blank" class="border border-white rounded-3xl px-4 py-2 
-          text-white text-lg font-bold 
-          transition-all duration-300 
-          hover:bg-white hover:text-[#161616]">
-                                        Xem thêm
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+<div class="flex flex-col items-center gap-3">
+  <div class="relative group overflow-hidden rounded-xl">
+    <img src="{{ asset('/assets/images/beebook.png') }}" alt="beebook"
+      class="w-[610px] h-[415px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
+
+    <div class="absolute inset-0 rounded-xl 
+        bg-black/50 opacity-100 
+        lg:opacity-0 lg:group-hover:opacity-100
+        transition-opacity duration-300 flex items-center justify-center">
+      <a href="https://www.beebook.shop/" target="_blank" 
+         class="border border-white rounded-3xl px-4 py-2 
+                text-white text-lg font-bold 
+                transition-all duration-300 
+                hover:bg-white hover:text-[#161616]">
+        Xem thêm
+      </a>
+    </div>
+  </div>
+</div>
+
                     </div>
                 </div>
 
@@ -122,9 +130,9 @@
             </section>
             <section id="ecommerce" class="mt-8">
                 <h1 class="text-4xl font-semibold ">Thương mại điện tử</h1>
-                <div class="mt-6 py-10 flex  rounded-3xl justify-around"
+                <div class="px-10 lg:px-0 gap-6 mt-6 py-10 flex flex-col items-center lg:items-start lg:flex-row rounded-3xl justify-around"
                     style="background: linear-gradient(180deg, #437FED, #030D42)">
-                    <div class="w-1/3 flex flex-col gap-4 font-semibold text-justify">
+                    <div class="  lg:w-1/3 flex flex-col gap-4 font-semibold text-justify">
                         <p class="text-[#F2F0EE]">
                             Beebook là dự án website thương mại điện tử chuyên kinh doanh sách, được xây dựng với mục
                             tiêu
@@ -157,21 +165,25 @@
 
         </main>
         <section id="subBanner" class="w-full relative mt-20">
-            <img src="{{asset('/assets/images/contact.png')}}" class="w-full object-cover object-center" alt="">
-            <div
-                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-8">
-                <div class="flex flex-col items-center gap-2">
+            <img src="{{asset('/assets/images/contact.png')}}" class="h-[400px] w-full object-cover object-center"
+                alt="">
+
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+              flex flex-col items-center gap-8 w-full">
+
+                <div class="w-full text-center space-y-4">
                     <h1 class="text-4xl text-[#F2F0EE] font-semibold">Đã có quyết định?</h1>
                     <h1 class="text-4xl text-[#F2F0EE] font-semibold">Liên hệ hợp tác với chúng tôi ngay.</h1>
                 </div>
 
-                <a href="/lien-he" class="text-2xl text-[#F2F0EE] border-2  border-[#F2F0EE] rounded-2xl px-6 py-2
-          transition-all duration-300 
-          hover:bg-[#F2F0EE] hover:text-black">
+                <a href="/lien-he" class="text-2xl text-[#F2F0EE] border-2 border-[#F2F0EE] rounded-2xl px-6 py-2
+              transition-all duration-300 
+              hover:bg-[#F2F0EE] hover:text-black">
                     Liên hệ ngay
                 </a>
             </div>
         </section>
+
 
     </section>
 
