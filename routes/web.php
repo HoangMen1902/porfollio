@@ -10,6 +10,6 @@ Route::get("/du-an", [ProjectController::class, "index"])->name("project");
 
 require __DIR__.'/auth.php';
 
-Route::get('/', function () {
-    return view('Project');
-});
+// Route::get('/', function () {
+//     return view('Project');
+// });
