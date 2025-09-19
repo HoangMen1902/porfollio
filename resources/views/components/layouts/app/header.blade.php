@@ -110,7 +110,7 @@
 
                 <!-- Desktop Menu -->
                 <nav class="hidden lg:flex items-center space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Trang Chủ</a>
+                    <a href="/" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Trang Chủ</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Giới Thiệu</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Dịch Vụ</a>
                     <a href="{{route('project')}}"
